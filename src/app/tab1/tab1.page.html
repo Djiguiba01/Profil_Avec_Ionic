@@ -7,11 +7,67 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="header">
+    <h2>Djiguiba</h2>
+    <div class="space-between">
+      <div class="followings">
+        <ion-badge color="primary" mode="ios">42</ion-badge>
+        <p>Abonnées</p>
+      </div>
+      <div class="followings">
+        <ion-badge color="primary" mode="ios">42</ion-badge>
+        <p>Abonnements</p>
+      </div>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+ 
+  <div class="Image-Position">
+    <div class="Second-border-Image"> 
+    <div class="Premier-border-Image">
+      <div class="image">
+        <img src="assets/images/informaticien.jpg" alt="">
+       </div>
+     </div>
+    </div>
+   </div>
+
+   <ion-card>
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img src="assets/images/FETE.jpg" alt="">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>Djiguiba</b></h2>
+        <p>30/09/2022</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class="tweetPoste">
+      <ion-label text-wrap>Passez un bon vendredi à vous tous !</ion-label>
+    </ion-item>
+    
+      <img class="tweetimage" src="assets/images/techno1.webp" alt="effet">
+    <!-- iconTweet -->
+    <div class="iconTweet">
+       <!-- 1 -->
+       <ion-button size="small" fill="clear">
+        <ion-icon name="chatbubbles" slot="start"></ion-icon>
+        34
+      </ion-button>
+       <!-- 2 -->
+       <ion-button size="small" fill="clear">
+        <ion-icon name="heart" color="danger"></ion-icon>
+        34
+      </ion-button>
+       <!-- 3 -->
+       <ion-button size="small" fill="clear">
+        <ion-icon name="happy" color="warning"></ion-icon>
+        34
+      </ion-button>
+    </div>
+    
+
+   </ion-card>
+ 
 </ion-content>
