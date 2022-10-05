@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./connexion.page.scss'],
 })
 export class ConnexionPage implements OnInit {
-
+  email:any;
+  password:any;
   constructor() { }
 
   ngOnInit() {

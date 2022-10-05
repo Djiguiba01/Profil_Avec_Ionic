@@ -1,9 +1,33 @@
-<ion-header>
+
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>inscription</ion-title>
+    <ion-buttons slot="start">
+      <ion-button color="primary" routerLink="/tab1">
+        <ion-icon slot="icon-only" name="arrow-back" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!--  -->
+    <ion-buttons slot="end" >
+      <ion-button >connexion</ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <!--  -->
+    <h1>Créez votre <br> compte </h1>
+    <!-- <img src="assets/images/informaticien.jpg" alt=""> -->
+
+  <!--  -->
+  <form id="form">
+    
+    <ion-input placeholder="Votre nom complet"></ion-input>
+    <ion-input placeholder="Email"></ion-input>
+    <ion-input type="password" placeholder="Password" ></ion-input>
+    <ion-button expand="block" shape="round"> S'inscrire</ion-button>
+  </form>
+
+  <p>Veuillez lire les conditions<br> d'inscription de notre application.</p>
 
 </ion-content>

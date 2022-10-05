@@ -1,31 +1,75 @@
-<ion-header class="ion-no-border">
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" routerLink="/tab1">
+        <ion-icon slot="icon-only" name="arrow-back" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- 1 Prémier Login -->
+<!-- <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button color="primary">
         <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
       </ion-button>
-    </ion-buttons>
-    <!--  -->
-    <ion-buttons slot="end">
-      <ion-button routerLink="/tab1">Inscription</ion-button>
+    </ion-buttons> -->
+
+    <!--dlld  -->
+    <!-- <ion-buttons slot="end">
+      <ion-button routerLink="/connexion">Inscription</ion-button>
     </ion-buttons>
 
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <!--  -->
-  <div id="header">
+<ion-content [fullscreen]="true"> -->
+  <!-- kkd -->
+  <!-- <div id="header">
     <h1>Connexion</h1>
     <img src="assets/images/informaticien.jpg" alt="">
-  </div>
+  </div> -->
 
-  <!--  -->
-  <form id="form">
+  <!-- dkd -->
+  <!-- <form id="form">
     
     <ion-input placeholder="Email"></ion-input>
     <ion-input type="password" placeholder="Password" ></ion-input>
     <ion-button expand="block" shape="round"> Connexion</ion-button>
   </form>
+
+</ion-content> -->
+
+
+<!-- 2 Second Login -->
+<ion-content class="ion-padding ion-text-center">
+
+  <div class="logo">
+    <img src="assets/images/circle.png" alt="images">
+  </div>
+
+  <div class="form"> 
+
+  <ion-item lines="none">
+    <ion-input [(ngModel)]="email" placeholder="Votre email"></ion-input>
+  </ion-item>
+  <!--  -->
+  <ion-item lines="none">
+    <ion-input [(ngModel)]="password" placeholder="Password" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button color="dark" expand="block">Connexion</ion-button>
+</div>
+
+<ion-button fill="clear">Créer un compte ?</ion-button>
+
+<!-- Afficher les saisi du champ en bas -->
+<!-- 
+  <h6>{{email}}</h6>
+<h6>{{password}}</h6> 
+-->
 
 </ion-content>
