@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" routerLink="/tab2">
+        <ion-icon slot="icon-only" name="arrow-back" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-button (click)="OpenConfirmDialogue()">PopupComfirmation</ion-button>
+  <ion-text><h1>{{status}}</h1></ion-text> 
+
+</ion-content>

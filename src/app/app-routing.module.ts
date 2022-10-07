@@ -25,6 +25,22 @@ const routes: Routes = [
   {
     path: 'inscription',
     loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
+  },
+  {
+    path: 'profil',
+    loadChildren: () => import('./profil/profil.module').then( m => m.ProfilPageModule)
+  },
+  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
+  {
+    path: 'popossemessage',
+    loadChildren: () => import('./popossemessage/popossemessage.module').then( m => m.PopossemessagePageModule)
+  },
+  {
+    path: 'connexion2',
+    loadChildren: () => import('./connexion2/connexion2.module').then( m => m.Connexion2PageModule)
   }
 ];
 @NgModule({
