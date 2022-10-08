@@ -41,7 +41,19 @@ const routes: Routes = [
   {
     path: 'connexion2',
     loadChildren: () => import('./connexion2/connexion2.module').then( m => m.Connexion2PageModule)
+  },  {
+    path: 'menu1',
+    loadChildren: () => import('./menu1/menu1.module').then( m => m.Menu1PageModule)
+  },
+  {
+    path: 'menu2',
+    loadChildren: () => import('./menu2/menu2.module').then( m => m.Menu2PageModule)
+  },
+  {
+    path: 'recherche',
+    loadChildren: () => import('./recherche/recherche.module').then( m => m.RecherchePageModule)
   }
+
 ];
 @NgModule({
   imports: [
